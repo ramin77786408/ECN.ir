@@ -729,13 +729,13 @@
                                     <a class="product-wrapper" href="{% url 'store:good_details' p.id %}" target="_self"
                                         tabindex="-1">
                                         <div class="product-wrapper__image">
-                                            <img src="{{ p.image }}" alt="{{p.name}} ">
+                                            <img src="/IMG/store/1687427587-CQ05ELgWFGkUDQ9W.jpeg" alt="{{p.name}} ">
                                         </div>
                                         <div class="product-wrapper__body">
                                             <h3>{{ p.name }}</h3>
                                             <div class="d-flex align-items-end justify-content-between">
                                                 <strong>
-
+                                                    {{ p.image.url }}
                                                 </strong>
                                                 <div class="d-flex align-items-end justify-content-center flex-column">
                                                     <s></s>

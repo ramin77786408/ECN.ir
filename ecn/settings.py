@@ -77,12 +77,15 @@ WSGI_APPLICATION = 'ecn.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE'    : 'django.db.backends.sqlite3',
-        'NAME'      : BASE_DIR / 'Store.sqlite3',
+        'ENGINE'    : 'django.db.backends.postgresql',
+        'NAME'      : 'ecnstore',
+        'USER'      : 'ecn',
+        'PASSWORD'  : '6Graminm',
+        'HOST'      : 'localhost',
+        'PORT'      : '5432'
      
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -124,3 +127,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_ROOT = BASE_DIR /'IMG'
+MEDIA_URL = '/IMG/'
